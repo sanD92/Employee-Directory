@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeInfoService } from '../employee-info.service';
+import { Router } from '../../../node_modules/@angular/router';
+import { BehaviorSubject } from '../../../node_modules/rxjs';
 
 @Component({
   selector: 'app-employee-list',
@@ -9,17 +11,23 @@ import { EmployeeInfoService } from '../employee-info.service';
 export class EmployeeListComponent implements OnInit {
 
   employeeData;
-  
-  constructor(private _empServie:EmployeeInfoService) { }
+  bSubject = new BehaviorSubject("");
+  constructor(private _empServie:EmployeeInfoService,private router:Router) { }
 
   ngOnInit() {
       this._empServie.fetchEmplyeeData().subscribe(data=>{
         this.employeeData=data;
         console.log(data);
       })
+    /*   this.bSubject.subscribe((data) => {
+        console.log('Subscriber A:', data);
+    }); */
   }
   onSelect(emp){
-    alert('I am selected')
+    console.log('I am selected',emp);
+    //empDetails
+    this.router.navigateByUrl('empDetails');
+    this.bSubject.next(emp);
   }
 
 }
