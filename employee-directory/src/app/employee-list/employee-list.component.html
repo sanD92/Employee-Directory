@@ -1,6 +1,16 @@
-<h3>Employee List</h3>
-<h4>List of all employees</h4>
-<div *ngFor="let emp of employeeData" (click)="onSelect(emp)">
-  {{emp.firstName}} {{emp.lastName}}
+<div class="flex-continer">
+  <h1>Employee List</h1>
 </div>
+
+
+<!-- <div *ngFor="let emp of employeeData" (click)="onSelect(emp)">
+  {{emp.firstName}} {{emp.lastName}}
+</div> -->
+
+<table class="table-config">
+  <h2 style="padding: 10px;">List of all employees</h2>
+  <tr *ngFor="let emp of employeeData" (click)="onSelect(emp)">
+    <td class="table-data"> {{emp.firstName}} {{emp.lastName}} <span style="float: right;" class="glyphicon glyphicon-menu-right"></span></td>
+  </tr>
+</table>
 <router-outlet></router-outlet>

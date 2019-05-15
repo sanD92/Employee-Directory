@@ -10,7 +10,7 @@
     },
     {
         "firstName":"Nancy",
-        "lastName":"ABC",
+        "lastName":"Davolio",
         "address":"US",
         "city":"US",
         "postalCode":"0055",
@@ -18,8 +18,35 @@
         "country":"USA"
     },
     {
-        "firstName":"XYZ",
-        "lastName":"YZ",
+        "firstName":"Andrew ",
+        "lastName":"Fuller",
+        "address":"Pune",
+        "city":"Pune",
+        "postalCode":"411057",
+        "phoneHome":"445685",
+        "country":"IND"
+    },
+    {
+        "firstName":"Janet ",
+        "lastName":"Leverling",
+        "address":"Pune",
+        "city":"Pune",
+        "postalCode":"411057",
+        "phoneHome":"445685",
+        "country":"IND"
+    },
+    {
+        "firstName":"Margaret ",
+        "lastName":"Peacock",
+        "address":"Pune",
+        "city":"Pune",
+        "postalCode":"411057",
+        "phoneHome":"445685",
+        "country":"IND"
+    },
+    {
+        "firstName":"Steven",
+        "lastName":"Buchanan",
         "address":"Pune",
         "city":"Pune",
         "postalCode":"411057",

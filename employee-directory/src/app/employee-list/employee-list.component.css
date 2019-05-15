@@ -1,0 +1,22 @@
+
+.flex-continer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(205, 237, 252);
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+.table-config{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+    border-collapse: collapse;
+    width: 100%;
+}
+.table-data{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+tr:hover {background-color: #ddd;}
