@@ -11,6 +11,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeResumeComponent } from './employee-resume/employee-resume.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from '@angular/material/tabs';
+import { SearchPipe } from './search.pipe';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,16 @@ import {MatTabsModule} from '@angular/material/tabs';
     HomeComponent,
     PageNotFoundComponentComponent,
     EmployeeDetailsComponent,
-    EmployeeResumeComponent
+    EmployeeResumeComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
