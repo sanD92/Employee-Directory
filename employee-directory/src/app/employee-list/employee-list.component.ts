@@ -11,23 +11,24 @@ import { BehaviorSubject } from '../../../node_modules/rxjs';
 export class EmployeeListComponent implements OnInit {
 
   employeeData;
-  bSubject = new BehaviorSubject("");
   constructor(private _empServie:EmployeeInfoService,private router:Router) { }
 
   ngOnInit() {
       this._empServie.fetchEmplyeeData().subscribe(data=>{
         this.employeeData=data;
-        console.log(data);
+        //console.log(data);
       })
     /*   this.bSubject.subscribe((data) => {
         console.log('Subscriber A:', data);
     }); */
   }
   onSelect(emp){
-    console.log('I am selected',emp);
+   // console.log('I am selected',emp);
     //empDetails
     this.router.navigateByUrl('empDetails');
-    this.bSubject.next(emp);
+    console.log('On select ',emp)
+    //console.log(typeof emp);
+    this._empServie.employeeDetails.next(emp);
   }
 
 }

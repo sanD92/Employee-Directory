@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from '../../node_modules/rxjs';
+import { Observable, BehaviorSubject } from '../../node_modules/rxjs';
 //import { Observable } from 'rxjs/Observable';
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeInfoService {
 
-  URL='assets/employee-information.json'
+  URL='assets/employee-information.json';
+  employeeDetails = new BehaviorSubject(null);
 
   constructor(private _http:HttpClient) { }
 

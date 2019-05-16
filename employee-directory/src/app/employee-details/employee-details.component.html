@@ -1,3 +1,69 @@
-<p>
-  employee-details works!
-</p>
+
+<div class="flex-continer1">
+    <h1><a routerLink="/empList"><label class="glyphicon glyphicon-menu-left"></label></a></h1>  
+</div>
+<div class="flex-continer" *ngFor="let emp of employeeDetails">
+  <h1>Employee Details of {{emp.firstName}} {{emp.lastName}}</h1> 
+</div>
+<!-- <p>
+
+  employee-details works! {{employeeDetails | json}}
+</p> -->
+<!-- <div *ngFor="let emp of employeeDetails;let i = index" class="emp-deatils">
+  
+  <label><h1 style="margin-left: -30px">Employee ID : {{emp.emp_id}}</h1></label>
+  <label style="float: right;padding-top: 40px"><a routerLink="/employeeResume" routerLinkActive="active">Flip to Resume</a></label>
+  <hr>
+  <label>First Name  : {{emp.firstName}}</label><br>
+  <label>Last Name   : {{emp.lastName}}</label><br>
+  <label>Address     : {{emp.address}}</label><br>
+  <label>City        : {{emp.city}}</label><br>
+  <label>Postal Code : {{emp.postalCode}} </label><br>
+  <label>Phone(Home) : {{emp.phoneHome}}</label><br>
+  <label>Country     : {{emp.country}}</label><br>
+  
+  <hr>
+</div> -->
+
+
+<div class="row" *ngFor="let emp of employeeDetails;let i = index">
+
+  <br>
+  <label><h1>Employee ID : {{emp.emp_id}}</h1></label>
+  <label style="float: right;padding-top: 40px;margin-right: 20px"><a routerLink="/employeeResume" routerLinkActive="active">Flip to Resume</a></label>
+  <br><hr>
+    <div class="column">
+      
+      <div>
+            <img width="300px" src="assets/user.svg" style="float: right; padding-bottom: 100px" alt="user-img">
+      
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card" style="float: left;">
+          <label style="display: flex; justify-content: left">First Name  : {{emp.firstName}}</label><br>
+          <label style="display: flex; justify-content: left">Last Name   : {{emp.lastName}}</label><br>
+          <label style="display: flex; justify-content: left">Address     : {{emp.address}}</label><br>
+          <label style="display: flex; justify-content: left">City        : {{emp.city}}</label><br>
+          <label style="display: flex; justify-content: left">Postal Code : {{emp.postalCode}} </label><br>
+          <label style="display: flex; justify-content: left">Phone(Home) : {{emp.phoneHome}}</label><br>
+          <label style="display: flex; justify-content: left">Country     : {{emp.country}}</label><br>
+      
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card" hidden>
+        <h3>Card 3</h3>
+      
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card" hidden>
+        <h3>Card 4</h3>
+       
+      </div>
+    </div>
+  </div>

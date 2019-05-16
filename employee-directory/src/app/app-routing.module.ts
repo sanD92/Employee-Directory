@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EmployeeResumeComponent } from './employee-resume/employee-resume.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,9 @@ const routes: Routes = [
   },
   {
     path:'empDetails',component:EmployeeDetailsComponent
+  },
+  {
+    path:'employeeResume',component:EmployeeResumeComponent
   },
   { path: '**', component: PageNotFoundComponentComponent }
 ];

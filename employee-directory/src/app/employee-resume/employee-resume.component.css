@@ -1,4 +1,3 @@
-
 .flex-continer{
     display: flex;
     flex-direction: row;
@@ -15,16 +14,21 @@
     align-items: left;
     height: 10px;
 }
-.table-config{
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
-    border-collapse: collapse;
-    width: 100%;
-}
-.table-data{
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    padding: 20px;
-}
-tr:hover {background-color: #ddd;}
+.example-small-box, .example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .example-small-box {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .example-large-box {
+    height: 300px;
+    width: 300px;
+  }

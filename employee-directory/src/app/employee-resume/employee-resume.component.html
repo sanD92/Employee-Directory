@@ -1,0 +1,35 @@
+<div class="flex-continer1">
+    <h1><a routerLink="/empDetails"><label class=" float-left glyphicon glyphicon-menu-left"></label></a></h1> 
+</div>
+<div class="flex-continer" *ngFor="let emp of employeeResumeDetails">
+  <h1>Resume of {{emp.firstName}} {{emp.lastName}}</h1>
+</div>
+
+<!-- <mat-tab-group>
+    <mat-tab label="Info"> Information of  </mat-tab>
+    <mat-tab label="Projects"> Project of  </mat-tab>
+    <mat-tab label="Hobbies"> Hobbies of  </mat-tab>
+    <mat-tab label="Notes"> Notes of </mat-tab>
+  </mat-tab-group> -->
+<mat-tab-group dynamicHeight *ngFor="let emp of employeeResumeDetails">
+  <mat-tab label="Info" >
+    <div class="example-large-box mat-elevation-z4">
+        Information of  {{emp.firstName}} {{emp.lastName}}
+    </div>
+  </mat-tab>
+  <mat-tab label="Projects">
+    <div class="example-large-box mat-elevation-z4">
+        Project of  {{emp.firstName}} {{emp.lastName}}
+    </div>
+  </mat-tab>
+  <mat-tab label="Hobbies">
+    <div class="example-large-box mat-elevation-z4">
+        Hobbies of   {{emp.firstName}} {{emp.lastName}}
+    </div>
+  </mat-tab>
+  <mat-tab label="Notes">
+    <div class="example-large-box mat-elevation-z4">
+        Notes of {{emp.firstName}} {{emp.lastName}}
+    </div>
+  </mat-tab>
+</mat-tab-group>
