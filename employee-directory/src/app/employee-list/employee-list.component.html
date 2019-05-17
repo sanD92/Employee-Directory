@@ -13,8 +13,9 @@
 
 <table class="table-config">
   <h2 style="padding: 10px;">List of all employees</h2>
-  <!-- <span class="glyphicon glyphicon-search"></span> -->
-  <label style="float: right; padding-right: 20px"> Filter: <input [(ngModel)]="query" placeholder="&#xF002; Search by name or id" style="font-family:Arial, FontAwesome"></label>
+  <!-- <span class="glyphicon glyphicon-search"></span> --> 
+  <label style="float: right; padding-right: 20px"> Filter: <input [(ngModel)]="query" placeholder="&nbsp;&nbsp;&#xF002; Search by name or id" class="input-box"></label>
+  <br>
   <tr *ngFor="let emp of employeeData | search:'emp_id,firstName':query" (click)="onSelect(emp)">
     <td class="table-data"> {{emp.firstName}} {{emp.lastName}} <span style="float: right;" class="glyphicon glyphicon-menu-right"></span></td>
   </tr>

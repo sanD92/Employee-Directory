@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     /* background: #34495e; */
-    font: normal 300 18px "Roboto", !important sans-serif ;
+    font: normal 300 18px "Roboto", !important;
  }
 
 .main_page{
@@ -93,4 +93,11 @@ input:hover{
 }
 li {
 	list-style: none;
+}
+.img-config{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: row;
+   height: 300px;
 }
