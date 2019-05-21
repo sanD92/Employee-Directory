@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeResumeComponent } from './employee-resume/employee-resume.component';
+import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
+import { DynamicformFormarrayComponent } from './dynamicform-formarray/dynamicform-formarray.component';
 
 const routes: Routes = [
   {
@@ -20,6 +22,9 @@ const routes: Routes = [
   },
   {
     path:'employeeResume',component:EmployeeResumeComponent
+  },
+  {
+    path:'dynamicForm',component:DynamicformFormarrayComponent
   },
   { path: '**', component: PageNotFoundComponentComponent }
 ];

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '../../node_modules/@angular/router';
+import { QuestionService } from './question.service';
 
 @Component({
   selector: 'app-root',

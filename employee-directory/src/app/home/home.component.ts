@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '../../../node_modules/@angular/router';
+import { QuestionService } from '../question.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,10 @@ import { Router } from '../../../node_modules/@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private router:Router){
-    
+  questions: any[];
+  
+  constructor( private router:Router,service: QuestionService){
+    this.questions = service.getQuestions();
   }
 
   ngOnInit() {
@@ -21,5 +23,8 @@ export class HomeComponent implements OnInit {
   }
   pageNotFoundCall(){
     this.router.navigateByUrl('/**');
+  }
+  dynamicFormCompnonentCall(){
+    this.router.navigateByUrl('/dynamicForm')
   }
 }

@@ -46,5 +46,12 @@
 <div class="img-config">
   <input type="button" class="btn" value="Display Not Found" (click)='pageNotFoundCall()'> &nbsp;
   <input type="button" class="btn" value="Show Employee List" (click)='emplyeeListComponentCall()'>
+  <input type="button" class="btn" value="Dynamic Form" (click)='dynamicFormCompnonentCall()'>
   <img src="assets/up.jpg" width="500px" alt="up">
 </div>
+
+<div>
+    <h2>Job Application for Heroes</h2>
+    <app-dynamic-form [questions]="questions"></app-dynamic-form>
+</div>
+
