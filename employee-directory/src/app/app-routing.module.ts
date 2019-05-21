@@ -8,6 +8,8 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { EmployeeResumeComponent } from './employee-resume/employee-resume.component';
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicformFormarrayComponent } from './dynamicform-formarray/dynamicform-formarray.component';
+import { ReactiveFormDemoComponent } from './reactive-form-demo/reactive-form-demo.component';
+import { FormBuilderDemoComponent } from './form-builder-demo/form-builder-demo.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,12 @@ const routes: Routes = [
   },
   {
     path:'dynamicForm',component:DynamicformFormarrayComponent
+  },
+  {
+    path:'reactiveForm',component:ReactiveFormDemoComponent
+  },
+  {
+     path:'formBuilder',component:FormBuilderDemoComponent
   },
   { path: '**', component: PageNotFoundComponentComponent }
 ];

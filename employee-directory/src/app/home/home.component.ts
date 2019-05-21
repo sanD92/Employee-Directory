@@ -25,6 +25,12 @@ export class HomeComponent implements OnInit {
     this.router.navigateByUrl('/**');
   }
   dynamicFormCompnonentCall(){
-    this.router.navigateByUrl('/dynamicForm')
+    this.router.navigateByUrl('/dynamicForm');
+  }
+  reactiveFormCompnonentCall(){
+    this.router.navigateByUrl('/reactiveForm');
+  }
+  formBuilderCompnonentCall(){
+    this.router.navigateByUrl('/formBuilder');
   }
 }

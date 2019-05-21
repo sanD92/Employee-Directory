@@ -1,0 +1,39 @@
+<br>
+<br>
+
+<div class="example-container">
+  <h1>Employee KYC</h1>
+  <hr>
+  <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field>
+      <input matInput formControlName="name" placeholder="Name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="email" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="salary" placeholder="Salary">
+    </mat-form-field>
+
+    <div  formGroupName="address">
+      <h3>Address</h3>
+      <mat-form-field>
+        <input matInput formControlName="street" placeholder="Street">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="city" placeholder="City">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="state" placeholder="State">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput formControlName="zip" placeholder="ZIP">
+      </mat-form-field>
+    </div>
+
+    <br>
+    <button type="submit" [disabled]="!employeeForm.valid" mat-raised-button color="primary" class="btn">Primary</button>
+  </form>
+</div>

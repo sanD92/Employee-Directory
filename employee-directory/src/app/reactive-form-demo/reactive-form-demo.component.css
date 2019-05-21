@@ -1,0 +1,15 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50PX;
+  }
+  
+* {
+    width: 70%;
+  }
+
+  .btn{
+     width: 100px;
+     margin:0;
+     padding:0;
+  }
