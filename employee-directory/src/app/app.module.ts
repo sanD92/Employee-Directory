@@ -17,11 +17,12 @@ import { ReactiveFormsModule }          from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
-import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFormQuestionComponent } from './dynamic-form-question/dynamic-form-question.component';
 import { DynamicformFormarrayComponent } from './dynamicform-formarray/dynamicform-formarray.component';
 import { ReactiveFormDemoComponent } from './reactive-form-demo/reactive-form-demo.component';
 import { FormBuilderDemoComponent } from './form-builder-demo/form-builder-demo.component';
+import { UserFormComponent } from './user-form/user-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,11 +32,11 @@ import { FormBuilderDemoComponent } from './form-builder-demo/form-builder-demo.
     EmployeeDetailsComponent,
     EmployeeResumeComponent,
     SearchPipe,
-    DynamicFormComponent,
     DynamicFormQuestionComponent,
     DynamicformFormarrayComponent,
     ReactiveFormDemoComponent,
-    FormBuilderDemoComponent
+    FormBuilderDemoComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +48,7 @@ import { FormBuilderDemoComponent } from './form-builder-demo/form-builder-demo.
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

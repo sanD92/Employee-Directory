@@ -33,4 +33,7 @@ export class HomeComponent implements OnInit {
   formBuilderCompnonentCall(){
     this.router.navigateByUrl('/formBuilder');
   }
+  userFormCompnonentCall(){
+    this.router.navigateByUrl('/userForm')
+  }
 }
